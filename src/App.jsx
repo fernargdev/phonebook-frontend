@@ -69,7 +69,6 @@ const App = () => {
               message: error.response.data.error,
               isError: true,
             })
-            setPersons(persons.filter((p) => p.id !== existingPerson.id))
           })
           .finally(() => {
             setTimeout(() => {
